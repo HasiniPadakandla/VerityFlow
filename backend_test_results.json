@@ -1,0 +1,64 @@
+{
+  "summary": {
+    "total_tests": 9,
+    "passed_tests": 8,
+    "success_rate": 0.8888888888888888,
+    "timestamp": "2026-02-05T15:02:10.566516"
+  },
+  "detailed_results": [
+    {
+      "test": "Root API Endpoint",
+      "success": true,
+      "details": "Status: 200, Message: Verityflow API - Message Analysis Service",
+      "timestamp": "2026-02-05T15:01:55.046010"
+    },
+    {
+      "test": "Analyze Scam Message",
+      "success": true,
+      "details": "Status: 200, Verdict: Suspicious, Confidence: 0.50, Red Flags: 2",
+      "timestamp": "2026-02-05T15:01:59.545479"
+    },
+    {
+      "test": "Analyze Legitimate Message",
+      "success": true,
+      "details": "Status: 200, Verdict: Legitimate, Confidence: 0.76",
+      "timestamp": "2026-02-05T15:02:03.556551"
+    },
+    {
+      "test": "Analyze Phishing Message",
+      "success": true,
+      "details": "Status: 200, Verdict: Phishing, Confidence: 0.50, Suspicious URLs: 1",
+      "timestamp": "2026-02-05T15:02:10.306748"
+    },
+    {
+      "test": "Empty Message Validation",
+      "success": false,
+      "details": "Status: 422 - Should reject empty message with 400",
+      "timestamp": "2026-02-05T15:02:10.369539"
+    },
+    {
+      "test": "History Endpoint",
+      "success": true,
+      "details": "Status: 200, Records: 3",
+      "timestamp": "2026-02-05T15:02:10.408426"
+    },
+    {
+      "test": "History Search",
+      "success": true,
+      "details": "Status: 200, Search Results: 1",
+      "timestamp": "2026-02-05T15:02:10.484696"
+    },
+    {
+      "test": "CSV Export",
+      "success": true,
+      "details": "Status: 200, Format: csv, Has Data: True",
+      "timestamp": "2026-02-05T15:02:10.524681"
+    },
+    {
+      "test": "JSON Export",
+      "success": true,
+      "details": "Status: 200, Format: json, Has Data: True",
+      "timestamp": "2026-02-05T15:02:10.565903"
+    }
+  ]
+}
