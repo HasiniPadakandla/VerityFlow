@@ -1,0 +1,158 @@
+{
+  "identity": {
+    "name": "Verityflow",
+    "mission": "Detect scams, fake news, and phishing with clinical precision and human clarity.",
+    "archetype": "Swiss & High-Contrast (Professional/Corporate)",
+    "tone": "Authoritative, Trustworthy, Clear, Urgent (threats), Calm (safe)"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Public Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "headings": "font-bold (700) or font-extrabold (800)",
+      "body": "font-normal (400)",
+      "medium": "font-medium (500)"
+    },
+    "sizes": {
+      "h1": "text-4xl md:text-6xl tracking-tight",
+      "h2": "text-3xl md:text-4xl tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body": "text-base md:text-lg leading-relaxed",
+      "small": "text-sm text-muted-foreground"
+    },
+    "instructions": "Use Manrope for all headings to establish a modern, tech-forward corporate identity. Use Public Sans for body text for maximum legibility (government-grade clarity). Use JetBrains Mono for technical details like URLs, confidence scores, or raw message snippets."
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#1e40af",
+        "foreground": "#ffffff",
+        "hover": "#1e3a8a"
+      },
+      "secondary": {
+        "DEFAULT": "#f1f5f9",
+        "foreground": "#0f172a"
+      },
+      "background": "#f8fafc",
+      "surface": "#ffffff",
+      "verdict_safe": "#10b981",
+      "verdict_scam": "#f43f5e",
+      "verdict_suspicious": "#f59e0b",
+      "text": {
+        "primary": "#0f172a",
+        "secondary": "#64748b",
+        "muted": "#94a3b8"
+      }
+    },
+    "usage_rules": [
+      "Background should be 'bg-slate-50' (warm grey) to reduce eye strain, not pure white.",
+      "Cards should be 'bg-white' with subtle borders.",
+      "Use 'verdict_safe' (Emerald) ONLY for Legitimate verdicts.",
+      "Use 'verdict_scam' (Rose) for Scam/Phishing verdicts.",
+      "Use 'verdict_suspicious' (Amber) for Fake News/Uncertain verdicts.",
+      "Primary Blue (#1e40af) is for the 'Analyze' button and active states.",
+      "NEVER use gradients for text. Keep text high-contrast solid colors."
+    ]
+  },
+  "layout": {
+    "grid_system": "Bento Grid (Mode A for Marketing, Mode B for Results)",
+    "spacing": {
+      "container_padding": "p-6 md:p-12",
+      "section_gap": "gap-8 md:gap-12",
+      "internal_padding": "p-6"
+    },
+    "containers": {
+      "main_wrapper": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "card": "rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-200"
+    },
+    "z_index": {
+      "header": "z-50",
+      "modal": "z-50",
+      "dropdown": "z-40",
+      "content": "z-10"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-blue-800 hover:bg-blue-900 text-white rounded-lg px-8 py-4 text-lg font-semibold shadow-lg shadow-blue-900/20 transition-all hover:-translate-y-0.5",
+      "secondary": "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 rounded-lg px-6 py-3 font-medium",
+      "ghost": "text-slate-600 hover:text-blue-800 hover:bg-blue-50 rounded-md px-4 py-2"
+    },
+    "inputs": {
+      "textarea": "w-full min-h-[200px] rounded-xl border-slate-200 bg-white p-6 text-lg focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all resize-none shadow-inner",
+      "search": "h-12 rounded-lg border-slate-200 bg-slate-50 px-4 focus:bg-white transition-colors"
+    },
+    "cards": {
+      "verdict": "p-8 rounded-2xl border-l-8 shadow-lg",
+      "stat": "p-6 rounded-xl bg-white border border-slate-100 shadow-sm flex flex-col gap-2"
+    },
+    "badges": {
+      "base": "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+      "safe": "bg-emerald-100 text-emerald-800 border border-emerald-200",
+      "danger": "bg-rose-100 text-rose-800 border border-rose-200",
+      "warning": "bg-amber-100 text-amber-800 border border-amber-200"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border border-white/20 shadow-xl",
+    "shadows": {
+      "soft": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "hover": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+    },
+    "borders": "border border-slate-200",
+    "radius": "rounded-xl"
+  },
+  "motion": {
+    "hover": "transition-all duration-200 ease-out hover:-translate-y-1",
+    "fade_in": "animate-in fade-in duration-500",
+    "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+    "pulse": "animate-pulse"
+  },
+  "images": {
+    "hero_bg": {
+      "url": "https://images.unsplash.com/photo-1758637612187-3f495543804b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwYWJzdHJhY3QlMjBnZW9tZXRyaWMlMjBzaGFwZXMlMjBibHVlJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MDMwMzI3N3ww&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract blue curves representing secure data flow",
+      "usage": "Hero section background with low opacity (opacity-40) and mix-blend-multiply"
+    },
+    "texture_bg": {
+      "url": "https://images.unsplash.com/photo-1766898588922-b3e4f6a59b5b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5JTIwZGlnaXRhbCUyMHNoaWVsZCUyMGFic3RyYWN0JTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzAzMDMyODd8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract platinum lines",
+      "usage": "Footer background or technical section background, grayscale, low contrast"
+    },
+    "audience_context": {
+      "url": "https://images.unsplash.com/photo-1706806594795-61ddc51116ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxzZW5pb3IlMjB3b21hbiUyMGxvb2tpbmclMjBhdCUyMHNtYXJ0cGhvbmUlMjBzbWlsaW5nfGVufDB8fHx8MTc3MDMwMzI4Mnww&ixlib=rb-4.1.0&q=85",
+      "alt": "Senior woman using smartphone safely",
+      "usage": "Use in 'Who is this for' or 'Protect your loved ones' section"
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "preferred_icons": {
+      "analyze": "ShieldCheck",
+      "scam": "AlertTriangle",
+      "safe": "CheckCircle2",
+      "history": "History",
+      "export": "Download",
+      "paste": "ClipboardPaste"
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure all text meets WCAG AA (4.5:1). Use slate-600+ for text on white.",
+    "focus_states": "Visible focus rings (ring-2 ring-blue-500) on all interactive elements.",
+    "aria": "Use aria-live for the verdict result region."
+  },
+  "universal_guidelines": [
+    "Do not use gradients for text.",
+    "Do not use 'Inter' font for headings.",
+    "Do not use transparent backgrounds for dropdowns or headers.",
+    "Add 'data-testid' to all interactive elements.",
+    "Use 'sonner' for toast notifications.",
+    "Use 'lucide-react' for icons.",
+    "Ensure mobile responsiveness (stack grids on mobile).",
+    "Use 'clsx' and 'tailwind-merge' for class conditional logic."
+  ],
+  "instructions_to_main_agent": "Implement the 'Home/Analyzer' page first. Focus on the 'Input -> Analyze -> Result' flow. The Result card must be the centerpiece, using the Bento Grid layout to separate Verdict, Confidence, and Explanations. Use the 'hero_bg' image as a subtle backdrop for the main analyzer container to give it depth."
+}
