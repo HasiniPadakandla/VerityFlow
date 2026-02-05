@@ -957,7 +957,7 @@ If you find Verityflow useful, please consider giving it a ⭐ on GitHub!
 
 **Built with ❤️ using [Emergent Agent Platform](https://emergent.sh)**
 
-Made by developers, for developers.
+**Made by Hasini**
 
 [⬆ Back to Top](#️-verityflow---ai-powered-scam-detection-system)
 
