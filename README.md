@@ -9,35 +9,13 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
-[Features](#-features) • [Architecture](#-architecture) • [Setup](#-setup-instructions) • [API Docs](#-api-documentation) • [Examples](#-usage-examples)
-
 </div>
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Architecture](#-architecture)
-- [3-Layer Detection System](#-3-layer-detection-system)
-- [Setup Instructions](#-setup-instructions)
-- [API Documentation](#-api-documentation)
-- [Usage Examples](#-usage-examples)
-- [Project Structure](#-project-structure)
-- [Design Guidelines](#-design-guidelines)
-- [Testing](#-testing)
-- [Performance Metrics](#-performance-metrics)
-- [Security & Privacy](#-security--privacy)
-- [Future Enhancements](#-future-enhancements)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
 ## 🎯 Overview
 
-Verityflow is a sophisticated web-based AI system designed to detect WhatsApp-style scam, fake news, and phishing messages. Using a state-of-the-art **3-layer hybrid detection approach**, it combines rule-based pattern matching, machine learning classification, and large language model reasoning to provide accurate, explainable verdicts.
+Verityflow is a web-based AI system designed to detect WhatsApp-style scams, fake news, and phishing messages. Using a state-of-the-art **3-layer hybrid detection approach**, it combines rule-based pattern matching, machine learning classification, and large language model reasoning to provide accurate, explainable verdicts.
 
 ### Why Verityflow?
 
@@ -51,7 +29,7 @@ Verityflow is a sophisticated web-based AI system designed to detect WhatsApp-st
 
 ## ✨ Key Features
 
-### Core Analysis Features
+### Core Features
 - ✅ **Multi-Category Detection**: Scam, Phishing, Fake News, Legitimate, Suspicious
 - ✅ **Confidence Scoring**: Percentage-based reliability indicators
 - ✅ **Detailed Explanations**: AI-generated reasoning for each verdict
@@ -219,7 +197,7 @@ Output:
 **Prompt Engineering**:
 ```
 System: Security analyst helping users identify threats.
-        Be clear, educational, avoid legal/medical claims.
+        Be clear, educational, and avoid legal/medical claims.
 
 Input: Message + Verdict + Red Flags
 
@@ -248,7 +226,7 @@ LLM Output:
 ├─ Reasons:
 │   • Creates false urgency with "URGENT" and "suspended"
 │   • Uses generic greeting (no personal details)
-│   • Shortened URL hides actual phishing site
+│   • Shortened URL hides the actual phishing site
 └─ Safety Advice: "Contact your bank directly using official 
     channels. Never click suspicious links."
 ```
@@ -427,7 +405,7 @@ curl -X POST "http://localhost:8001/api/analyze-message" \
 
 **Endpoint**: `GET /api/history`
 
-**Description**: Retrieves past analysis records with optional search
+**Description**: Retrieves past analysis records with an optional search
 
 **Query Parameters**:
 - `limit` (optional, default: 50): Number of records to return
@@ -627,85 +605,6 @@ verityflow/
 ├── docker-compose.yml                # Docker orchestration (optional)
 └── .gitignore                        # Git ignore rules
 ```
-
----
-
-## 🎨 Design Guidelines
-
-### Typography
-
-**Font Families**:
-- **Headings**: Manrope (700-800 weight) - Modern, tech-forward
-- **Body Text**: Public Sans (400-500 weight) - Maximum legibility
-- **Code/Data**: JetBrains Mono (400-500 weight) - Technical elements
-
-**Text Hierarchy**:
-```css
-H1 (Hero):     text-4xl md:text-6xl font-extrabold
-H2 (Section):  text-3xl md:text-4xl font-bold
-H3 (Card):     text-2xl font-semibold
-Body:          text-base md:text-lg
-Small:         text-sm text-muted-foreground
-```
-
----
-
-### Color Palette
-
-| Purpose | Color | Hex Code | Usage |
-|---------|-------|----------|-------|
-| **Primary** | Deep Royal Blue | `#1e40af` | Buttons, active states |
-| **Background** | Slate 50 | `#f8fafc` | Page background |
-| **Surface** | White | `#ffffff` | Cards, containers |
-| **Legitimate** | Emerald | `#10b981` | Safe verdicts |
-| **Scam/Phishing** | Rose | `#f43f5e` | Danger verdicts |
-| **Suspicious** | Amber | `#f59e0b` | Warning verdicts |
-| **Text Primary** | Slate 900 | `#0f172a` | Main content |
-| **Text Secondary** | Slate 600 | `#64748b` | Supporting text |
-
----
-
-### Component Design
-
-**Cards**:
-```css
-.card {
-  border-radius: 0.75rem;
-  border: 1px solid #e2e8f0;
-  background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  transition: all 0.2s ease-out;
-}
-
-.card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-}
-```
-
-**Buttons**:
-```css
-.button-primary {
-  background: #1e40af;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(30, 58, 138, 0.2);
-  transition: all 0.2s ease-out;
-}
-
-.button-primary:hover {
-  background: #1e3a8a;
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(30, 58, 138, 0.3);
-}
-```
-
-**Verdict Cards**:
-- **Legitimate**: `border-l-8 border-emerald-500 bg-emerald-50`
-- **Scam/Phishing**: `border-l-8 border-rose-500 bg-rose-50`
-- **Suspicious**: `border-l-8 border-amber-500 bg-amber-50`
-
 ---
 
 ## 🧪 Testing
@@ -920,33 +819,6 @@ Special thanks to:
 
 ---
 
-## 📞 Support
-
-### Getting Help
-- 📖 **Documentation**: Read this README thoroughly
-- 💬 **Issues**: Report bugs via GitHub Issues
-- 📧 **Email**: Contact support@verityflow.com
-- 🌐 **Website**: Visit https://verityflow.com
-
-### Frequently Asked Questions
-
-**Q: Is Verityflow free to use?**  
-A: Yes, the open-source version is free. Enterprise features may require licensing.
-
-**Q: How accurate is the detection?**  
-A: 95% overall accuracy based on our test dataset. Accuracy improves with usage and feedback.
-
-**Q: Does it work with other messaging apps?**  
-A: Currently optimized for WhatsApp-style messages, but works with any text message.
-
-**Q: Can I use my own OpenAI key?**  
-A: Yes! Replace `EMERGENT_LLM_KEY` with your OpenAI key in `.env`
-
-**Q: Is my data safe?**  
-A: Yes. Messages are only stored in your local MongoDB. No data is shared externally.
-
----
-
 ## 🌟 Star History
 
 If you find Verityflow useful, please consider giving it a ⭐ on GitHub!
@@ -955,9 +827,7 @@ If you find Verityflow useful, please consider giving it a ⭐ on GitHub!
 
 <div align="center">
 
-**Built with ❤️ using [Emergent Agent Platform](https://emergent.sh)**
-
-**Made by Hasini**
+**Built with ❤️ by Hasini**
 
 [⬆ Back to Top](#️-verityflow---ai-powered-scam-detection-system)
 
