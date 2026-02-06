@@ -1,4 +1,8 @@
+<div align="center">
+  
 # 🛡️ Verityflow - AI-Powered Scam Detection System
+
+</div>
 
 <div align="center">
 
@@ -324,21 +328,6 @@ yarn start
 ```
 
 **Frontend will be available at**: `http://localhost:3000`
-
----
-
-### Docker Setup (Optional)
-
-```bash
-# Build and run with Docker Compose
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
-```
 
 ---
 
@@ -701,44 +690,7 @@ Current test coverage from automated testing agent:
 - Messages not used for model training without permission
 - Transparent about what data is stored
 
-### Recommendations for Production
-1. Enable HTTPS with valid SSL certificates
-2. Implement authentication (JWT tokens)
-3. Add rate limiting middleware
-4. Set up monitoring and logging
-5. Regular security audits
-6. Backup MongoDB regularly
-7. Use environment variables for all secrets
-
 ---
-
-## 🔮 Future Enhancements
-
-### Planned Features
-
-#### Phase 1: Enhanced Detection
-- [ ] **Multi-language Support**: Detect scams in Hindi, Spanish, French, etc.
-- [ ] **Image Analysis**: Scan forwarded images for fake news using OCR + Vision AI
-- [ ] **Voice Message Analysis**: Transcribe and analyze audio messages
-- [ ] **Real-time Alerts**: Notify users about trending scams in their region
-
-#### Phase 2: User Engagement
-- [ ] **User Reporting**: Community-driven scam database
-- [ ] **Confidence Tuning**: Feedback loop to improve ML model
-- [ ] **Batch Analysis**: Process multiple messages simultaneously
-- [ ] **Chrome Extension**: One-click analysis from WhatsApp Web
-
-#### Phase 3: Advanced Features
-- [ ] **Threat Intelligence**: Integration with global scam databases
-- [ ] **Sender Analysis**: Check sender patterns and history
-- [ ] **Link Sandboxing**: Safe preview of suspicious URLs
-- [ ] **Mobile App**: Native iOS and Android applications
-
-#### Phase 4: Enterprise Features
-- [ ] **Admin Dashboard**: Analytics and reporting for organizations
-- [ ] **White-label Solution**: Customizable branding
-- [ ] **API Access**: RESTful API for third-party integration
-- [ ] **Webhooks**: Real-time notifications for critical threats
 
 ### Model Improvements
 - Train on larger, real-world dataset
@@ -750,25 +702,7 @@ Current test coverage from automated testing agent:
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
-
-### How to Contribute
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Make your changes**
-4. **Commit with clear messages**
-   ```bash
-   git commit -m "Add: Multi-language support for Hindi"
-   ```
-5. **Push to your branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-6. **Open a Pull Request**
+I welcome contributions! Here's how you can help:
 
 ### Contribution Guidelines
 - Follow existing code style (PEP 8 for Python, Airbnb for JavaScript)
@@ -794,7 +728,7 @@ This project is built as an MVP demonstration using the Emergent Agent Platform.
 **Important Notes**:
 - For production use, conduct proper security audits
 - Ensure compliance with data protection regulations (GDPR, CCPA, etc.)
-- OpenAI API usage subject to their terms of service
+- OpenAI API usage is subject to their terms of service
 - Commercial use may require additional licenses
 
 **Third-Party Licenses**:
@@ -824,11 +758,3 @@ Special thanks to:
 If you find Verityflow useful, please consider giving it a ⭐ on GitHub!
 
 ---
-
-<div align="center">
-
-**Built with ❤️ by Hasini**
-
-[⬆ Back to Top](#️-verityflow---ai-powered-scam-detection-system)
-
-</div>
